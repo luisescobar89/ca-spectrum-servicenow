@@ -7,7 +7,6 @@ curl -X POST -H "Accept: application/json"  -H "Content-Type: application/json" 
     "resource":"Exchange Mailbox Database Mailbox1",
     "severity":"5",
     "event_class":"SCOM",
-    "description":"Exchange mailbox Mailbox1 available capacity is 50MB",
-    "additional_info":"{"name":"My Airlines"}"
+    "description":"Exchange mailbox Mailbox1 available capacity is 50MB"
     }]
 }' -u midserverle:midserver https://highmetricdemo2.service-now.com/api/global/em/jsonv2
