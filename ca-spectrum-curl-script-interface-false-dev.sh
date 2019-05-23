@@ -1,4 +1,10 @@
 #!/bin/bash
+#cURL script that triggers from CA Spectrum SAMN notification to build an HTTP POST request and create an event on ServiceNow em_event table
+# 
+# Version History
+# ---------------------------------------------------
+# 1.0      initial release       HM\LE      5/23/2019
+
 
 CREDS="$(realpath "credentials")"
 . $CREDS
