@@ -15,4 +15,4 @@ curl -X POST -H "Accept: application/json" -H "Content-Type: application/json" -
         \"description\" : \"Disk Usage 98%\",
         \"additional_info\":\"{\'u_key\':\'core01\'}\"
     }]
-}" -u midserverle:midserver https://highmetricdemo2.service-now.com/api/global/em/jsonv2
+}" -u user:password https://[instance_url].service-now.com/api/global/em/jsonv2

@@ -1,39 +1,32 @@
 #!/bin/bash
 # cURL script that triggers from CA Spectrum SAMN notification to build an HTTP POST request and create an event on ServiceNow em_event table
-# # Arguments/variables added are for when USE_NEW_INTERFACE Set to False
-#
+# Arguments/variables added are for when USE_NEW_INTERFACE Set to True
+# 
 # Version History
 # ---------------------------------------------------
 # 1.0      initial release       HM\LE      5/23/2019
 
-
-CREDS="$(realpath "credentials")"
-. $CREDS
-
-DATE=${1}
-TIME=${2}
-MODEL_TYPE=${3}
-MODEL_NAME=${4}
-ALARM_ID=${5}
-SEVERITY=${6}
-CAUSE=${7}
-REPAIR_SCREEN=${8}
-STATUS=${9}
-SERVER=${10}
-LANDSCAPE=${11}
-MODEL_HANDLE=${12}
-MODEL_TYPE_HANDLE=${13}
-IP_ADDRESS=${14}
-SECURITY_STRING=${15}
-ALARM_STATE=${16}
-ACKNOWLEDGED=${17}
-CLEARABLE=${18}
-FLASH_GREEN=${19}
-PCAUSE=${20}
-LOCATION=${21}
-AGE=${22}
-NOTIFDATA=${23}
-EVENTMSG=${24}
+DATE=$1
+TIME=$2
+MODEL_TYPE=$3
+MODEL_NAME=$4
+ALARM_ID=$5
+SEVERITY=$6
+CAUSE=$7
+REPAIR_SCREEN=$8
+SERVER=$9
+LANDSCAPE=$10
+MODEL_HANDLE=$11
+MODEL_TYPE_HANDLE=$12
+IP_ADDRESS=$13
+SECURITY_STRING=$14
+ALARM_STATE=$15
+ACKNOWLEDGED=$16
+CLEARABLE=$17
+FLASH_GREEN=$18
+LOCATION=$19
+AGE=$20
+NOTIFDATA=$21
 SOURCE="CA Spectrum"
 
 curl -X POST -H "Accept: application/json" -H "Content-Type: application/json" -d "{
